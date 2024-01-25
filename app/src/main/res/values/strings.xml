@@ -6,4 +6,5 @@
     <string name="username">Username</string>
     <string name="register_now">REGISTER NOW</string>
     <string name="login">Login</string>
+    <string name="choose_user">Choose User</string>
 </resources>
