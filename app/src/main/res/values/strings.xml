@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Nagad Wallet</string>
     <string name="company_logo">Company Logo</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="username">Username</string>
+    <string name="register_now">REGISTER NOW</string>
+    <string name="login">Login</string>
 </resources>
