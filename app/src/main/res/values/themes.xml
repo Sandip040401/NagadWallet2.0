@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.NagadWallet" parent="Base.Theme.NagadWallet" />
+    <style name="Theme.NagadWallet.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.NagadWallet.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.NagadWallet.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

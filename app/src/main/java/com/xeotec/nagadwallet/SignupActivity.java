@@ -52,5 +52,14 @@ public class SignupActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        TextView loginTextView = findViewById(R.id.Login);
+        loginTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Open RegisterActivity when "Register Now" is clicked
+                Intent intent = new Intent(SignupActivity.this, DashboardActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

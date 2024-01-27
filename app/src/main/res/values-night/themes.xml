@@ -1,7 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Base application theme. -->
     <style name="Base.Theme.NagadWallet" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- No customization for both light and dark themes -->
     </style>
+
+    <style name="Theme.NagadWallet" parent="Base.Theme.NagadWallet" />
+    <style name="Theme.NagadWallet.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.NagadWallet.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.NagadWallet.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
