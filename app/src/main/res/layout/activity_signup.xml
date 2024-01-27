@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAFAFA"
     tools:context=".SignupActivity">
 
   <ImageView
@@ -23,11 +24,14 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/choose_user"
+      android:textColor="#000000"
       android:textSize="14sp"
       app:layout_constraintBottom_toTopOf="@+id/userSelect"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.169"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView" />
+      app:layout_constraintTop_toBottomOf="@+id/imageView"
+      app:layout_constraintVertical_bias="0.521" />
 
   <Spinner
 
@@ -35,7 +39,8 @@
       android:layout_width="300dp"
       android:layout_height="wrap_content"
       android:background="@drawable/rounded_border"
-      android:spinnerMode="dialog"
+      android:backgroundTint="#687D4F4F"
+      android:spinnerMode="dropdown"
       app:layout_constraintBottom_toTopOf="@+id/userName"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.504"
@@ -49,9 +54,11 @@
       android:layout_height="wrap_content"
       android:background="@drawable/rounded_border"
       android:drawableStart="@drawable/baseline_email_24"
+      android:drawablePadding="5dp"
       android:ems="10"
       android:hint="@string/username"
       android:inputType="text"
+      android:textColorHint="#FC7E14"
       app:circularflow_defaultRadius="5dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -64,9 +71,12 @@
       android:layout_height="wrap_content"
       android:background="@drawable/rounded_border"
       android:drawableStart="@drawable/baseline_password_24"
+      android:drawablePadding="5dp"
       android:ems="10"
       android:hint="@string/enter_password"
       android:inputType="textPassword"
+      android:textColor="@color/black"
+      android:textColorHint="#FC7E14"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.497"
@@ -92,13 +102,14 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/register_now"
-      android:textColor="#1976D2"
+      android:textColor="#FC7E14"
       android:textSize="16sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toTopOf="@+id/Login"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/f_pw" />
+      app:layout_constraintTop_toBottomOf="@+id/f_pw"
+      app:layout_constraintVertical_bias="0.646" />
 
   <Button
       android:id="@+id/Login"
@@ -111,5 +122,5 @@
       app:layout_constraintHorizontal_bias="0.497"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/Password"
-      app:layout_constraintVertical_bias="0.504" />
+      app:layout_constraintVertical_bias="0.555" />
 </androidx.constraintlayout.widget.ConstraintLayout>
